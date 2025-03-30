@@ -1,4 +1,5 @@
 OnInit
+Play 250 nowait muito-dificil.mp3
 Chat Send "Kruiz Control Initialized"
 
 OnCommand b 0 !example
@@ -6,3 +7,62 @@ Chat Send "Success! It worked!"
 
 OnCommand b 0 !kcreset
 Reset
+
+OnChannelPoint "Um tapa na gostosa"
+Play 70 nowait tapa.mp3
+
+OnChannelPoint "Combate"
+Play 100 nowait combate.mp3
+
+OnChannelPoint "JABOTEI"
+Play 100 nowait jabotei.mp3
+
+OnChannelPoint "Seu Vgbnd!"
+Play 100 nowait seu-vagabundo.mp3
+
+OnChannelPoint "Alerta!!!"
+Play 100 nowait alerta.mp3
+
+OnChannelPoint "Ai q diliça"
+Play 100 nowait ai-que-delicia-mickey.mp3
+
+OnChannelPoint "Serpente"
+Play 50 nowait serpente.mp3
+
+OnChannelPoint "Vem joga"
+Play 50 nowait vemjoga.mp3
+
+OnChannelPoint "Oi frango"
+Play 110 nowait oifrango.mp3
+
+OnChannelPoint "Meu deus"
+Play 50 nowait meudeus.mp3
+
+OnChannelPoint "fuen fuon"
+Play 85 nowait fuen.mp3
+
+OnChannelPoint "Ain é muito difícil"
+Play 250 nowait muito-dificil.mp3
+
+OnChannelPoint "Ele olhou pra vc uwu"
+Play 100 nowait ele-olhou-pra-mim.mp3
+
+OnChannelPoint "Xo contar uma coisa pra vcs"
+Play 100 nowait contar-uma-coisa.mp3
+
+OnChannelPoint "Flashbang"
+Play 100 nowait throwing-flashbang-sound-effect-cs-go.mp3
+Delay 1
+API GET http://localhost:3000/flashbang/5000
+Chat Send "{user} jogou uma flashbang de {api_data} segundos"
+
+OnChannelPoint "Flashbang Random"
+Play 100 nowait throwing-flashbang-sound-effect-cs-go.mp3
+Delay 1
+API GET http://localhost:3000/flashbang
+OBS SceneSource Main flashbang on
+Chat Send "{user} jogou uma flashbang de {api_data} segundos"
+Delay {api_data}
+OBS SceneSource Main flashbang off
+
+
